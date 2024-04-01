@@ -4,19 +4,19 @@ repository: https://github.com/Uniswap/uniswap-v3-subgraph
 schema:
   file: ./schema.graphql
 graft:
-  base: QmZeCuoZeadgHkGwLwMeguyqUKz1WPWQYKcKyMCeQqGhsF
-  block: 19470000
+  # base: QmZeCuoZeadgHkGwLwMeguyqUKz1WPWQYKcKyMCeQqGhsF
+  # block: 19470000
 features:
   - nonFatalErrors
   - grafting
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: mainnet
+    network: xlayertestnet
     source:
-      address: '0x1F98431c8aD98523631AE4a59f267346ea31F984'
+      address: '0x3F6904E81f636f0F476595ef633033647C702487'
       abi: Factory
-      startBlock: 12369621
+      startBlock: 12988312
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -41,11 +41,11 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: mainnet
+    network: xlayertestnet
     source:
-      address: '0xC36442b4a4522E871399CD717aBDD847Ab11FE88'
+      address: '0x6d5B724F924aC9e226FA28FcCc257670f4699D17'
       abi: NonfungiblePositionManager
-      startBlock: 12369651
+      startBlock: 12988348
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -75,7 +75,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: mainnet
+    network: xlayertestnet
     source:
       abi: Pool
     mapping:
