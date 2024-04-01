@@ -11,13 +11,13 @@ const USDC_WETH_03_POOL = '0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8'
 // usually tokens that many tokens are paired with s
 export let WHITELIST_TOKENS: string[] = [
   WETH_ADDRESS, // WETH
-  '0x649b85e513DDE807800cdB2cd00dE5A3af1A73F2', // USDC-OKB,100 POOL
+  '0x743b265df9645c7215afc4d608af9955b7e22056', // USDC-OKB,100 POOL
 ]
 
 let STABLE_COINS: string[] = [
-  '0x2E1cbA4a9f6E69d27e65046fC93b873b05F79a39', // USDC
-  '0xf7B48f136c7d060F5fc6F020F06418c53097F51B', // USDT
-  '0x0e6ABF17C186a08Bc247C85e54F3ceDE27D94369'  // DAI
+  '0x04292af1cf8687235a83766d55b307880fc5e76d', // USDC
+  '0xded3ac2a172a21a729063c39da55c030ec4a8cc9', // USDT
+  '0x1b981e783d8d139e74ebbd7be5d99d8a0a7eeb0a'  // DAI
 ]
 
 let MINIMUM_ETH_LOCKED = BigDecimal.fromString('60')
