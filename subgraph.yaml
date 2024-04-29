@@ -12,11 +12,11 @@ features:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: xlayertestnet
+    network: xlayer
     source:
-      address: '0x3F6904E81f636f0F476595ef633033647C702487'
+      address: '0xD30Dd032C7897300C66870640F3C31F74B8b3D08'
       abi: Factory
-      startBlock: 12988312
+      startBlock: 658599
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -41,11 +41,11 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: xlayertestnet
+    network: xlayer
     source:
-      address: '0x6d5B724F924aC9e226FA28FcCc257670f4699D17'
+      address: '0xa79c3526ffA0E877eF0130f5c876069fc6D465Ea'
       abi: NonfungiblePositionManager
-      startBlock: 12988348
+      startBlock: 658599
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -75,7 +75,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: xlayertestnet
+    network: xlayer
     source:
       abi: Pool
     mapping:
